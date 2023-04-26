@@ -16,7 +16,7 @@ let isDrawing = false;
 
 let fillable = false;
 let figure = 'line';
-let x1, y1;
+let x1, y1, preFigure;
 let allArray = [];
 let index = -1;
 
@@ -139,7 +139,15 @@ function undoLast() {
 
 // Выбор фигуры с помощью кнопки
 function setFigure(element) {
+    preFigure = document.getElementById(figure);
+    preFigure.style = `
+        background = '#222';
+        color : 'white';
+    `;
+
     figure = element.id;
+    element.style.background = 'white';
+    element.style.color = 'black';
 };
 
 // Заливка

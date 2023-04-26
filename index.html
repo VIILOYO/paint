@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./style.css" type="text/css" rel="stylesheet">
     <link rel="icon" href="https://w7.pngwing.com/pngs/257/646/png-transparent-painting-art-paintbrush-computer-icons-cartoon-hand-painted-witch-palette-painting-brush.png">
+    <script src="https://kit.fontawesome.com/af104dbd7e.js" crossorigin="anonymous"></script>
     <title>Canvas</title>
 </head>
 
@@ -14,9 +15,9 @@
         <canvas id="canvas"></canvas>
 
         <div class="tools">
-            <button onclick="undoLast()" type="button" class="button">Отмена</button>
-            <button onclick="clearCanvas()" type="button" class="button">Очистить</button>
-            <button onclick="changeFillable(this)" type="button" class="button" id="fill">Заливка</button>
+            <button onclick="undoLast()" type="button" class="button"><i class="fa-solid fa-arrow-rotate-left fa-lg"></i> Отмена</button>
+            <button onclick="clearCanvas()" type="button" class="button"><i class="fa-regular fa-circle-xmark fa-lg"></i> Очистить</button>
+            <button onclick="changeFillable(this)" type="button" class="button" id="fill"><i class="fa-solid fa-fill-drip fa-lg"></i> Заливка</button>
             
             <div onclick="changeColor(this)" class="color-field" style="background: black;"></div>
             <div onclick="changeColor(this)" class="color-field" style="background: red;"></div>
@@ -29,11 +30,11 @@
         </div>
 
         <div class="figure">
-            <button onclick="setFigure(this)" type="button" class="button" id="eraser">Ластик</button>
-            <button onclick="setFigure(this)" type="button" class="button" id="dot">Точка</button>
-            <button onclick="setFigure(this)" type="button" class="button" id="line">Линия</button>
-            <button onclick="setFigure(this)" type="button" class="button" id="square">Квадрат</button>
-            <button onclick="setFigure(this)" type="button" class="button" id="circle">Круг</button>
+            <button onclick="setFigure(this)" type="button" class="button" id="eraser"><i class="fa-solid fa-eraser fa-lg"></i> Ластик</button>
+            <button onclick="setFigure(this)" type="button" class="button" id="dot"><i class="fa-regular fa-circle-dot fa-lg"></i> Точка</button>
+            <button onclick="setFigure(this)" type="button" class="button" id="line"><i class="fa-solid fa-pencil fa-lg"></i> Линия</button>
+            <button onclick="setFigure(this)" type="button" class="button" id="square"><i class="fa-solid fa-square fa-lg"></i> Квадрат</button>
+            <button onclick="setFigure(this)" type="button" class="button" id="circle"><i class="fa-solid fa-circle fa-lg"></i> Круг</button>
         </div>
     </div>
 
